@@ -9,12 +9,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService { // command + shift + t test파일 자동생성
 
     private final MemberRepository memberRepository;
 
-    @Autowired // 연관관계 정의
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
